@@ -1,9 +1,9 @@
 # repeater
-A primitive http server which for a GET request returns the body of the latest POST request. 
+A primitive http server which returns the body of the latest POST request. 
 Request body is kept in memory, so it will be lost on restart. It's mostly for small request bodies.
 Use it for whatever you'd like though. I'm using it to expose public-safe data from a private network.
 
-One way of running it with docker:
+To run it with docker:
 
 1. Build the image
 `docker build -t repeater .`
